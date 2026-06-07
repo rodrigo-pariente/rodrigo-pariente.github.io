@@ -1,0 +1,11 @@
+footer {
+  display: flex;
+  font-family: 'Edu SA Beginner', sans-serif;
+  margin: 67px;
+  justify-content: end;
+  font-size: 2rem;
+}
+
+#dog-stamp {
+  margin-left: 67px;
+}

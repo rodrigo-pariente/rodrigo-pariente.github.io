@@ -1,0 +1,37 @@
+header {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 70px;
+  padding: 90px;
+  padding-bottom: 70px;
+  background-color: var(--g2);
+}
+
+.about-me {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: auto auto 1fr;
+}
+
+.about-me h1 {
+  line-height: 1.20;
+  margin-bottom: 28px;
+}
+
+.about-me p {
+  font-size: 1.1rem;
+}
+
+.about-me #place {
+  align-self: end;
+  margin-bottom: 0;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.pp {
+}
+
+.dec-block {
+  color: var(--g3);
+}

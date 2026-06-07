@@ -1,0 +1,43 @@
+html {
+  font-family: 'Victor Mono', 'Edu SA Beginner', 'Cascadia Code', monospace;
+  color: var(--g3);
+  background-color: var(--g1);
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--g3);
+}
+
+ul {
+  font-size: 1.2rem;
+  list-style-type: square;
+}
+
+li {
+  margin: 8px;
+}
+
+.point {
+  list-style-image: url('/img/point.svg');
+}
+
+.mail {
+  list-style-image: url('/img/mail.svg');
+}
