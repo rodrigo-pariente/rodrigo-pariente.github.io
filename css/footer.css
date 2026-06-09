@@ -1,11 +1,56 @@
 footer {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
   font-family: 'Edu SA Beginner', sans-serif;
   margin: 67px;
+  gap: 67px;
   justify-content: end;
+  align-items: end;
   font-size: 2rem;
 }
 
-#dog-stamp {
-  margin-left: 67px;
+@media (max-width: 1000px) {
+  #dog-stamp {
+    width: 120px;
+  }
+
+  footer {
+    margin: 67px 30px;
+    margin-top: 90px;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 700px) {
+  #dog-stamp {
+    width: 90px;
+  }
+
+  footer {
+    font-size: 1.6rem;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer {
+    font-size: 1.4rem;
+    gap: 10px;
+  }
+
+  #dog-stamp {
+    width: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  footer {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 300px) {
+  footer {
+    font-size: 1rem;
+  }
 }

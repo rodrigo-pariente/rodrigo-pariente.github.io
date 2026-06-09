@@ -7,6 +7,22 @@ header {
   background-color: var(--g2);
 }
 
+.high {
+  display: inline-block;
+}
+
+.low {
+  display: none;
+}
+
+#dog-stamp-header-high {
+  display: none;
+}
+
+#dog-stamp-header-low {
+  display: none;
+}
+
 .about-me {
   display: grid;
   grid-auto-flow: row;
@@ -29,9 +45,110 @@ header {
   font-style: italic;
 }
 
-.pp {
+#pp {
 }
 
 .dec-block {
   color: var(--g3);
+}
+
+@media (max-width: 1400px) {
+  header {
+    gap: 35px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .about-me h1 {
+    font-size: 2rem;
+    margin-bottom: 14px;
+  }
+
+  .about-me p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  header {
+    padding: 30px;
+  }
+
+  .about-me h1 {
+    font-size: 1.9rem;
+  }
+
+  #h1-frame {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    display: flex;
+  }
+
+  #pp {
+    align-self: start;
+    width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  #pp {
+    display: none;
+  }
+
+  #dog-stamp-header-high {
+    display: inline-block;
+    float: left;
+    width: 100px;
+    margin: 5px 10px;
+    margin-left: 0;
+  }
+
+  .about-me {
+    display: block;
+  }
+
+  .about-me h1 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  #dog-stamp-header-high {
+    display: none;
+  }
+
+  #dog-stamp-header-low {
+    display: inline-block;
+    float: left;
+    width: 100px;
+    margin: 5px 10px;
+    margin-left: 0;
+  }
+
+  .about-me h1 {
+    font-size: 1.4rem;
+  }
+
+  .lower-frame {
+    display: none;
+  }
+
+  .about-me p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 300px) {
+  #dog-stamp-header {
+    float: none;
+  }
+
+  .about-me h1 {
+    font-size: 1.2rem;
+  }
 }
