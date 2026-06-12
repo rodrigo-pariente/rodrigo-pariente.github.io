@@ -2,7 +2,7 @@
 
 Conheça-me através do meu résumé!
 
-<a href="rodrigo-pariente.github.io/">rodrigo-pariente.github.io</a>
+[rodrigo-pariente.github.io/](https://rodrigo-pariente.github.io)
 
 Acesse minhas informações de **contato**, **interesses** e **projetos notáveis**.
 
