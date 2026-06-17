@@ -64,6 +64,23 @@
   align-items: center;
 }
 
+.know-more::before {
+  display: inline-block;
+  content: '';
+  background-image: url('/img/link.svg');
+  background-repeat: no-repeat;
+  background-size: 8px;
+  width: 8px;
+  height: 8px;
+  padding-left: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .know-more::before {
+    background-image: url('/img/link-dm.svg');
+  }
+}
+
 @media (max-width: 1400px) {
   #contents {
     gap: 35px;

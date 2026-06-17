@@ -46,9 +46,19 @@ li {
 }
 
 .point {
-  list-style-image: light-dark(url('/img/point.svg'), url('/img/point-dm.svg'));
+  list-style-image: url('/img/point.svg');
 }
 
 .mail {
-  list-style-image: light-dark(url('/img/mail.svg'), url('/img/mail-dm.svg'));
+  list-style-image: url('/img/mail.svg');
+}
+
+@media(prefers-color-scheme: dark) {
+  .point {
+    list-style-image: url('/img/point-dm.svg');
+  }
+
+  .mail {
+    list-style-image: url('/img/mail-dm.svg');
+  }
 }
