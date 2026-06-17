@@ -4,7 +4,7 @@ header {
   gap: 70px;
   padding: 90px;
   padding-bottom: 70px;
-  background-color: var(--g2);
+  background-color: var(--header-background-color);
 }
 
 .high {
@@ -36,6 +36,7 @@ header {
 
 .about-me p {
   font-size: 1.1rem;
+  color: var(--header-paragraph-color);
 }
 
 .about-me #place {
@@ -46,10 +47,6 @@ header {
 }
 
 #pp {
-}
-
-.dec-block {
-  color: var(--g3);
 }
 
 @media (max-width: 1400px) {

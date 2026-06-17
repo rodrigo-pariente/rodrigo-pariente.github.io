@@ -1,7 +1,37 @@
 :root {
-  --g1: #EBF3DE;
-  --g2: #D8EAD0;
-  --g3: #28393C;
-  --g4: #4E6355;
-  --p4: #211C29;
+  color-scheme: light dark;
+
+  --a1-1: #EBF3DE;
+  --a1-2: #D8EAD0;
+  --a1-3: #28393C;
+  --a1-4: #4E6355;
+  --a1-5: #89C99C;
+  --a1-6: #305450;
+  --a1-7: #2B3F41;
+  --a2-1: #211C29;
+  --a2-2: #ADA7A8;
+  --b3: #1A1A1C;
+
+  --background-color: light-dark(var(--a1-1), var(--a1-3));
+  --paragraph-color: light-dark(var(--a1-3), var(--a1-1));
+  --large-text-color: light-dark(var(--a1-3),  var(--a1-5));
+  --border-color: light-dark(var(--background-color), var(--a1-6));
+
+  --information-list-background-color: light-dark(var(--background-color), var(--a1-7));
+
+  /* header */
+  --header-paragraph-color: light-dark(var(--a1-3), var(--a1-1));
+  --header-background-color: light-dark(var(--a1-2), var(--b3));
+
+  /* contents */
+  --project-content-background-color: light-dark(var(--a1-2), var(--a1-7));
+  --project-technologies-background-color: light-dark(var(--a2-1), var(--a2-2));
+  --know-more-background-color: light-dark(var(--a1-2), var(--border-color));
+  --know-more-color: light-dark(var(--a1-4), var(--paragraph-color));
+}
+
+@media (max-width: 600px) {
+  :root {
+    --information-list-background-color: light-dark(var(--a1-2), var(--a1-7));
+  }
 }

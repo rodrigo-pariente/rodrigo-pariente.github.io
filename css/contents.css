@@ -7,6 +7,11 @@
   gap: 75px;
 }
 
+#info ul {
+  background-color: light-dark(var(--background-color), var(--a1-7));
+  border: solid 1px var(--border-color);
+}
+
 #contents h2 {
   font-size: 1.5rem;
 }
@@ -35,11 +40,12 @@
 
 .project-content {
   padding: 16px;
-  background-color: var(--g2);
+  background-color: var(--project-content-background-color);
+  border: solid 1px var(--border-color);
 }
 
 .technologies {
-  color: var(--p4);
+  color: var(--project-technologies-background-color);
   opacity: 0.4;
   font-weight: 600;
 }
@@ -50,8 +56,8 @@
 
 .know-more {
   display: inline-block;
-  background-color: var(--g2);
-  color: var(--g4);
+  background-color: var(--know-more-background-color);
+  color: var(--know-more-color);
   font-size: 0.8rem !important;
   padding: 4px;
   margin-top: 6px;
@@ -79,7 +85,6 @@
 
   ul {
     margin: 12px 0;
-    background-color: var(--g2);
     padding: 2px;
     padding-left: 32px;
     font-size: 1rem;
@@ -165,5 +170,12 @@
 
   #info {
     gap: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #info ul {
+    background-color: light-dark(var(--a1-2), var(--a1-7));
+    border: solid 1px var(--border-color);
   }
 }
